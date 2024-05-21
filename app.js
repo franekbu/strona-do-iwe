@@ -19,10 +19,14 @@ switchButton.addEventListener('click',()=>{
 
 if (theme === 'night') {
     document.querySelector('body').classList.add('night');
+    document.querySelector('.section__landing--img--orange').classList.add('hidden');
+	document.querySelector('.section__landing--img--purple').classList.remove('hidden');
 }
 
 if (theme === 'light') {
     document.querySelector('body').classList.remove('night');
+    document.querySelector('.section__landing--img--purple').classList.add('hidden');
+    document.querySelector('.section__landing--img--orange').classList.remove('hidden');
 }
 
 
